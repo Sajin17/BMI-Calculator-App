@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="543.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sajing_finalexam.Controller">
+   <top>
+      <AnchorPane prefHeight="78.0" prefWidth="543.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="411.0" layoutY="27.0" mnemonicParsing="false" onAction="#onCalculateBMI" text="Calculate BMI" />
+            <TextField fx:id="weightInput" layoutX="39.0" layoutY="28.0" promptText="Weight in kilograms" />
+            <TextField fx:id="heightInput" layoutX="227.0" layoutY="28.0" promptText="Height in metres" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="274.0" prefWidth="543.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableView" layoutY="-2.0" prefHeight="288.0" prefWidth="543.0">
+              <columns>
+                <TableColumn fx:id="heightC" prefWidth="114.39996337890625" text="Height" />
+                <TableColumn fx:id="weightC" prefWidth="99.199951171875" text="Weight" />
+                  <TableColumn fx:id="bmiCol" prefWidth="118.39996337890625" text="BMI" />
+                  <TableColumn fx:id="statusCol" prefWidth="210.4000244140625" text="Weight status" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="weightDisplay" layoutX="91.0" layoutY="14.0" />
+            <TextField fx:id="heightDisplay" layoutX="91.0" layoutY="62.0" />
+            <TextField fx:id="bmiDisplay" layoutX="357.0" layoutY="14.0" />
+            <TextField fx:id="statusDisplay" layoutX="357.0" layoutY="62.0" />
+            <Label layoutX="30.0" layoutY="18.0" text="Weight" />
+            <Label layoutX="31.0" layoutY="66.0" text="Height" />
+            <Label layoutX="292.0" layoutY="18.0" text="BMI" />
+            <Label layoutX="266.0" layoutY="66.0" text="Weight status" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
