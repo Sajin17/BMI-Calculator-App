@@ -20,5 +20,5 @@ Technologies used in the project:
 
 *   Java
 *   JavaFX
-*   Scene Builder
+*   SceneBuilder
 *   IntelliJ Idea
